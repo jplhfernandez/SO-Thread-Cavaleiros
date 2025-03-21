@@ -11,7 +11,7 @@ public class Main {
 		Semaphore semaforo = new Semaphore(1);
 		
 		for(int i = 0; i < 4; i++) {
-			Thread t = new ThreadCaminhada(semaforo);
+			Thread t = new ThreadCaminhada(semaforo, i);
 			t.start();
 		}
 	}
